@@ -1,0 +1,44 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cyber-man-database
+    username: cyber-man-user
+    password: cyber-man-password
+  jpa:
+    hibernate:
+      # Production
+      ddl-auto: none
+      # If you did break the database and need a fresh setup here is cleanest way to bring back to life the app
+      # 1. run once with the next line uncommented and comment line 11. This will drop the database tables and schema !!!!
+      #ddl-auto: create-drop
+      # 2. Stop the app to have no more connections to the db
+      # Connect to the "postgres" database, not to cyber-man-database, because you won't be able to drop it
+      # USE THIS COMMAND IF YOU CAN'T SEE ANY OUTPUT FOR ANY QUERY: /set pager 0  (More likely to work after this)
+      # Execute this command to drop the db: "drop database "cyber-man-database";
+      # If there is no output of Success or Error/Fail, you may want to run first: /set pager 0 (thank me later)
+      # \l = list databases
+      # \c database-name = connect to database
+      # \dt = list tables from the database you are connected to
+      # 3. Create the database using this command: create database "cyber-man-database"
+      # 4. Run this in CLI on the A&D VM as sudo: psql --username=cyber-man-user -d cyber-man-database -h localhost < sqlfile.sql
+      # where sqlfile.sql is the backup file provided such you dont have to revert if you performed write operations
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+application:
+  security:
+    jwt:
+      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 86400000
+      refresh-token:
+        expiration: 604800000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,heapdump,env,beans,httpexchanges,beans,metrics

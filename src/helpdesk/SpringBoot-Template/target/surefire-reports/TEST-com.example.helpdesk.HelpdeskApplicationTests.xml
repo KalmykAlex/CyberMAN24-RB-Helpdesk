@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.helpdesk.HelpdeskApplicationTests" time="9.171" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\1.Coding\Java\Springboot\SpringBoot-Template\target\test-classes;D:\1.Coding\Java\Springboot\SpringBoot-Template\target\classes;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.1.7\spring-boot-starter-data-jpa-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.1.7\spring-boot-starter-aop-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.1.7\spring-boot-starter-jdbc-3.1.7.jar;C:\Users\owy_j\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-jdbc\6.0.15\spring-jdbc-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\hibernate\orm\hibernate-core\6.2.17.Final\hibernate-core-6.2.17.Final.jar;C:\Users\owy_j\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\owy_j\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\owy_j\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\owy_j\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\owy_j\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\owy_j\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\owy_j\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\owy_j\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\owy_j\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\owy_j\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\owy_j\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\owy_j\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\owy_j\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\owy_j\.m2\repository\org\springframework\data\spring-data-jpa\3.1.7\spring-data-jpa-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\data\spring-data-commons\3.1.7\spring-data-commons-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-orm\6.0.15\spring-orm-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-context\6.0.15\spring-context-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-tx\6.0.15\spring-tx-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-beans\6.0.15\spring-beans-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-aspects\6.0.15\spring-aspects-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.1.7\spring-boot-starter-security-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter\3.1.7\spring-boot-starter-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot\3.1.7\spring-boot-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.1.7\spring-boot-autoconfigure-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.1.7\spring-boot-starter-logging-3.1.7.jar;C:\Users\owy_j\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\owy_j\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\owy_j\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.20.0\log4j-to-slf4j-2.20.0.jar;C:\Users\owy_j\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\owy_j\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\owy_j\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-aop\6.0.15\spring-aop-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\security\spring-security-config\6.1.6\spring-security-config-6.1.6.jar;C:\Users\owy_j\.m2\repository\org\springframework\security\spring-security-web\6.1.6\spring-security-web-6.1.6.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-expression\6.0.15\spring-expression-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.1.7\spring-boot-starter-web-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.1.7\spring-boot-starter-json-3.1.7.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-web\6.0.15\spring-web-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-webmvc\6.0.15\spring-webmvc-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\owy_j\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\owy_j\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.1.7\spring-boot-starter-test-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-test\3.1.7\spring-boot-test-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.1.7\spring-boot-test-autoconfigure-3.1.7.jar;C:\Users\owy_j\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\owy_j\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\owy_j\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\owy_j\.m2\repository\net\minidev\json-smart\2.4.11\json-smart-2.4.11.jar;C:\Users\owy_j\.m2\repository\net\minidev\accessors-smart\2.4.11\accessors-smart-2.4.11.jar;C:\Users\owy_j\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\owy_j\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\owy_j\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\owy_j\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\owy_j\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\owy_j\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\owy_j\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\owy_j\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\owy_j\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\owy_j\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\owy_j\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\owy_j\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\owy_j\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\owy_j\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\owy_j\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\owy_j\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\owy_j\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-core\6.0.15\spring-core-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-jcl\6.0.15\spring-jcl-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-test\6.0.15\spring-test-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\owy_j\.m2\repository\org\springframework\security\spring-security-test\6.1.6\spring-security-test-6.1.6.jar;C:\Users\owy_j\.m2\repository\org\springframework\security\spring-security-core\6.1.6\spring-security-core-6.1.6.jar;C:\Users\owy_j\.m2\repository\org\springframework\security\spring-security-crypto\6.1.6\spring-security-crypto-6.1.6.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\3.1.7\spring-boot-starter-thymeleaf-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\thymeleaf\thymeleaf-spring6\3.1.2.RELEASE\thymeleaf-spring6-3.1.2.RELEASE.jar;C:\Users\owy_j\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\owy_j\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\owy_j\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\owy_j\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\owy_j\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\owy_j\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.1.7\spring-boot-starter-actuator-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.1.7\spring-boot-actuator-autoconfigure-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-actuator\3.1.7\spring-boot-actuator-3.1.7.jar;C:\Users\owy_j\.m2\repository\io\micrometer\micrometer-observation\1.11.7\micrometer-observation-1.11.7.jar;C:\Users\owy_j\.m2\repository\io\micrometer\micrometer-commons\1.11.7\micrometer-commons-1.11.7.jar;C:\Users\owy_j\.m2\repository\io\micrometer\micrometer-core\1.11.7\micrometer-core-1.11.7.jar;C:\Users\owy_j\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\owy_j\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\owy_j\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\owy_j\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\owy_j\.m2\repository\org\mockito\mockito-all\1.9.5\mockito-all-1.9.5.jar;C:\Users\owy_j\.m2\repository\org\mozilla\rhino\1.7.13\rhino-1.7.13.jar;C:\Users\owy_j\.m2\repository\org\eclipse\birt\runtime\org.mozilla.javascript\1.7.5.v201504281450\org.mozilla.javascript-1.7.5.v201504281450.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.1.7\spring-boot-starter-tomcat-3.1.7.jar;C:\Users\owy_j\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\owy_j\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.17\tomcat-embed-core-10.1.17.jar;C:\Users\owy_j\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.17\tomcat-embed-el-10.1.17.jar;C:\Users\owy_j\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.17\tomcat-embed-websocket-10.1.17.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Bucharest"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\owy_j\.jdks\corretto-17.0.10\bin"/>
+    <property name="sun.java.command" value="C:\Users\owy_j\AppData\Local\Temp\surefire4443826210990785102\surefirebooter-20240507180452552_3.jar C:\Users\owy_j\AppData\Local\Temp\surefire4443826210990785102 2024-05-07T18-04-52_337-jvmRun1 surefire-20240507180452552_1tmp surefire_0-20240507180452552_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\1.Coding\Java\Springboot\SpringBoot-Template\target\test-classes;D:\1.Coding\Java\Springboot\SpringBoot-Template\target\classes;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.1.7\spring-boot-starter-data-jpa-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.1.7\spring-boot-starter-aop-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.1.7\spring-boot-starter-jdbc-3.1.7.jar;C:\Users\owy_j\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-jdbc\6.0.15\spring-jdbc-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\hibernate\orm\hibernate-core\6.2.17.Final\hibernate-core-6.2.17.Final.jar;C:\Users\owy_j\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\owy_j\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\owy_j\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\owy_j\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\owy_j\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\owy_j\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\owy_j\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\owy_j\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\owy_j\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\owy_j\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\owy_j\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\owy_j\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\owy_j\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\owy_j\.m2\repository\org\springframework\data\spring-data-jpa\3.1.7\spring-data-jpa-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\data\spring-data-commons\3.1.7\spring-data-commons-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-orm\6.0.15\spring-orm-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-context\6.0.15\spring-context-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-tx\6.0.15\spring-tx-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-beans\6.0.15\spring-beans-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-aspects\6.0.15\spring-aspects-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.1.7\spring-boot-starter-security-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter\3.1.7\spring-boot-starter-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot\3.1.7\spring-boot-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.1.7\spring-boot-autoconfigure-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.1.7\spring-boot-starter-logging-3.1.7.jar;C:\Users\owy_j\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\owy_j\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\owy_j\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.20.0\log4j-to-slf4j-2.20.0.jar;C:\Users\owy_j\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\owy_j\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\owy_j\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-aop\6.0.15\spring-aop-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\security\spring-security-config\6.1.6\spring-security-config-6.1.6.jar;C:\Users\owy_j\.m2\repository\org\springframework\security\spring-security-web\6.1.6\spring-security-web-6.1.6.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-expression\6.0.15\spring-expression-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.1.7\spring-boot-starter-web-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.1.7\spring-boot-starter-json-3.1.7.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-web\6.0.15\spring-web-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-webmvc\6.0.15\spring-webmvc-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\owy_j\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\owy_j\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.1.7\spring-boot-starter-test-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-test\3.1.7\spring-boot-test-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.1.7\spring-boot-test-autoconfigure-3.1.7.jar;C:\Users\owy_j\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\owy_j\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\owy_j\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\owy_j\.m2\repository\net\minidev\json-smart\2.4.11\json-smart-2.4.11.jar;C:\Users\owy_j\.m2\repository\net\minidev\accessors-smart\2.4.11\accessors-smart-2.4.11.jar;C:\Users\owy_j\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\owy_j\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\owy_j\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\owy_j\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\owy_j\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\owy_j\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\owy_j\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\owy_j\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\owy_j\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\owy_j\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\owy_j\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\owy_j\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\owy_j\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\owy_j\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\owy_j\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\owy_j\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\owy_j\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-core\6.0.15\spring-core-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-jcl\6.0.15\spring-jcl-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\springframework\spring-test\6.0.15\spring-test-6.0.15.jar;C:\Users\owy_j\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\owy_j\.m2\repository\org\springframework\security\spring-security-test\6.1.6\spring-security-test-6.1.6.jar;C:\Users\owy_j\.m2\repository\org\springframework\security\spring-security-core\6.1.6\spring-security-core-6.1.6.jar;C:\Users\owy_j\.m2\repository\org\springframework\security\spring-security-crypto\6.1.6\spring-security-crypto-6.1.6.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\3.1.7\spring-boot-starter-thymeleaf-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\thymeleaf\thymeleaf-spring6\3.1.2.RELEASE\thymeleaf-spring6-3.1.2.RELEASE.jar;C:\Users\owy_j\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\owy_j\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\owy_j\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\owy_j\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\owy_j\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\owy_j\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\owy_j\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.1.7\spring-boot-starter-actuator-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.1.7\spring-boot-actuator-autoconfigure-3.1.7.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-actuator\3.1.7\spring-boot-actuator-3.1.7.jar;C:\Users\owy_j\.m2\repository\io\micrometer\micrometer-observation\1.11.7\micrometer-observation-1.11.7.jar;C:\Users\owy_j\.m2\repository\io\micrometer\micrometer-commons\1.11.7\micrometer-commons-1.11.7.jar;C:\Users\owy_j\.m2\repository\io\micrometer\micrometer-core\1.11.7\micrometer-core-1.11.7.jar;C:\Users\owy_j\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\owy_j\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\owy_j\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\owy_j\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\owy_j\.m2\repository\org\mockito\mockito-all\1.9.5\mockito-all-1.9.5.jar;C:\Users\owy_j\.m2\repository\org\mozilla\rhino\1.7.13\rhino-1.7.13.jar;C:\Users\owy_j\.m2\repository\org\eclipse\birt\runtime\org.mozilla.javascript\1.7.5.v201504281450\org.mozilla.javascript-1.7.5.v201504281450.jar;C:\Users\owy_j\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.1.7\spring-boot-starter-tomcat-3.1.7.jar;C:\Users\owy_j\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\owy_j\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.17\tomcat-embed-core-10.1.17.jar;C:\Users\owy_j\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.17\tomcat-embed-el-10.1.17.jar;C:\Users\owy_j\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.17\tomcat-embed-websocket-10.1.17.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\owy_j"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Users\owy_j\.jdks\corretto-17.0.10"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\1.Coding\Java\Springboot\SpringBoot-Template"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="windows-1252"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\owy_j\AppData\Local\Temp\surefire4443826210990785102\surefirebooter-20240507180452552_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.10+7-LTS"/>
+    <property name="user.name" value="owy_j"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.10.7.1"/>
+    <property name="localRepository" value="C:\Users\owy_j\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\owy_j\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2023.3.4"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="user.dir" value="D:\1.Coding\Java\Springboot\SpringBoot-Template"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="21796"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\owy_j\.jdks\corretto-17.0.10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\WireGuard\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\owy_j\AppData\Local\Android\Sdk\platform-tools\adb.exe;C:\Program Files\PuTTY\;C:\Users\owy_j\.cargo\bin;C:\Users\owy_j\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\owy_j\AppData\Local\Programs\Python\Python312\;C:\Users\owy_j\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2023.3.3\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.4\bin;;C:\Users\owy_j\AppData\Local\Programs\oh-my-posh\bin;C:\Users\owy_j\.dotnet\tools;C:\Program Files\JetBrains\RustRover 233.14015.153\bin;;C:\Users\owy_j\AppData\Roaming\npm;C:\Users\owy_j\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\owy_j\AppData\Local\Android\Sdk\platform-tools\adb.exe;;C:\Program Files\JetBrains\GoLand 2024.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.10+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="test" classname="com.example.helpdesk.HelpdeskApplicationTests" time="0.537">
+    <system-out><![CDATA[18:04:53.584 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.helpdesk.HelpdeskApplicationTests]: HelpdeskApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:04:53.728 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.helpdesk.HelpdeskApplication for test class com.example.helpdesk.HelpdeskApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.7)
+
+2024-05-07T18:04:54.253+03:00  INFO 21796 --- [           main] c.e.helpdesk.HelpdeskApplicationTests    : Starting HelpdeskApplicationTests using Java 17.0.10 with PID 21796 (started by owy_j in D:\1.Coding\Java\Springboot\SpringBoot-Template)
+2024-05-07T18:04:54.255+03:00  INFO 21796 --- [           main] c.e.helpdesk.HelpdeskApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-05-07T18:04:55.372+03:00  INFO 21796 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-07T18:04:55.459+03:00  INFO 21796 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 6 JPA repository interfaces.
+2024-05-07T18:04:56.298+03:00  INFO 21796 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-07T18:04:56.360+03:00  INFO 21796 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.17.Final
+2024-05-07T18:04:56.362+03:00  INFO 21796 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-05-07T18:04:56.809+03:00  INFO 21796 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-07T18:04:56.842+03:00  INFO 21796 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-07T18:04:57.083+03:00  INFO 21796 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@69499c6f
+2024-05-07T18:04:57.086+03:00  INFO 21796 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-07T18:04:57.126+03:00  WARN 21796 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-07T18:04:58.376+03:00  INFO 21796 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table if exists _user 
+       drop constraint if exists FKff8gmypm10m717ki59cihwxh8
+2024-05-07T18:04:58.399+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.399+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "_user" does not exist, skipping
+Hibernate: 
+    alter table if exists comment 
+       drop constraint if exists FKmjlort5neh06nmdgtlmu9ntt9
+2024-05-07T18:04:58.400+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.400+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "comment" does not exist, skipping
+Hibernate: 
+    alter table if exists comment 
+       drop constraint if exists FKoo5phijy22unidgkw0sipcs74
+2024-05-07T18:04:58.401+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.401+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "comment" does not exist, skipping
+Hibernate: 
+    alter table if exists ticket 
+       drop constraint if exists FKlai6kg2ql83up4jb9m84chp2g
+2024-05-07T18:04:58.402+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.402+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "ticket" does not exist, skipping
+Hibernate: 
+    alter table if exists ticket 
+       drop constraint if exists FKpm59y0gyrns15y7towf446web
+2024-05-07T18:04:58.403+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.403+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "ticket" does not exist, skipping
+Hibernate: 
+    alter table if exists token 
+       drop constraint if exists FKiblu4cjwvyntq3ugo31klp1c6
+2024-05-07T18:04:58.404+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.405+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "token" does not exist, skipping
+Hibernate: 
+    drop table if exists _user cascade
+2024-05-07T18:04:58.405+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.405+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "_user" does not exist, skipping
+Hibernate: 
+    drop table if exists comment cascade
+2024-05-07T18:04:58.406+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.406+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "comment" does not exist, skipping
+Hibernate: 
+    drop table if exists department cascade
+2024-05-07T18:04:58.407+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.407+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "department" does not exist, skipping
+Hibernate: 
+    drop table if exists ticket cascade
+2024-05-07T18:04:58.407+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.407+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "ticket" does not exist, skipping
+Hibernate: 
+    drop table if exists token cascade
+2024-05-07T18:04:58.408+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.408+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "token" does not exist, skipping
+Hibernate: 
+    drop sequence if exists _user_seq
+2024-05-07T18:04:58.409+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.409+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "_user_seq" does not exist, skipping
+Hibernate: 
+    drop sequence if exists comment_seq
+2024-05-07T18:04:58.409+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.409+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "comment_seq" does not exist, skipping
+Hibernate: 
+    drop sequence if exists department_seq
+2024-05-07T18:04:58.410+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.410+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "department_seq" does not exist, skipping
+Hibernate: 
+    drop sequence if exists ticket_seq
+2024-05-07T18:04:58.411+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.411+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "ticket_seq" does not exist, skipping
+Hibernate: 
+    drop sequence if exists token_seq
+2024-05-07T18:04:58.412+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-05-07T18:04:58.412+03:00  WARN 21796 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "token_seq" does not exist, skipping
+Hibernate: 
+    create sequence _user_seq start with 1 increment by 50
+Hibernate: 
+    create sequence comment_seq start with 1 increment by 50
+Hibernate: 
+    create sequence department_seq start with 1 increment by 50
+Hibernate: 
+    create sequence ticket_seq start with 1 increment by 50
+Hibernate: 
+    create sequence token_seq start with 1 increment by 50
+Hibernate: 
+    create table _user (
+        id integer not null,
+        department_id bigint,
+        email varchar(255),
+        firstname varchar(255),
+        lastname varchar(255),
+        password varchar(255),
+        role varchar(255) check (role in ('USER','ADMIN','MANAGER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table comment (
+        user_id integer,
+        id bigint not null,
+        id_ticket bigint,
+        comment varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table department (
+        department_id bigint not null,
+        department_name varchar(255),
+        primary key (department_id)
+    )
+Hibernate: 
+    create table ticket (
+        user_assignee_id integer,
+        user_id integer,
+        created_at timestamp(6) with time zone,
+        id_ticket bigint not null,
+        last_update timestamp(6) with time zone,
+        dtype varchar(31) not null,
+        status varchar(255) check (status in ('NEW','IN_PROGRESS','DONE')),
+        subject varchar(255),
+        threat_level varchar(255),
+        primary key (id_ticket)
+    )
+Hibernate: 
+    create table token (
+        expired boolean not null,
+        id integer not null,
+        revoked boolean not null,
+        user_id integer,
+        token varchar(255) unique,
+        token_type varchar(255) check (token_type in ('BEARER')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists _user 
+       add constraint FKff8gmypm10m717ki59cihwxh8 
+       foreign key (department_id) 
+       references department
+Hibernate: 
+    alter table if exists comment 
+       add constraint FKmjlort5neh06nmdgtlmu9ntt9 
+       foreign key (id_ticket) 
+       references ticket
+Hibernate: 
+    alter table if exists comment 
+       add constraint FKoo5phijy22unidgkw0sipcs74 
+       foreign key (user_id) 
+       references _user
+Hibernate: 
+    alter table if exists ticket 
+       add constraint FKlai6kg2ql83up4jb9m84chp2g 
+       foreign key (user_assignee_id) 
+       references _user
+Hibernate: 
+    alter table if exists ticket 
+       add constraint FKpm59y0gyrns15y7towf446web 
+       foreign key (user_id) 
+       references _user
+Hibernate: 
+    alter table if exists token 
+       add constraint FKiblu4cjwvyntq3ugo31klp1c6 
+       foreign key (user_id) 
+       references _user
+2024-05-07T18:04:58.494+03:00  INFO 21796 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-07T18:04:59.113+03:00  INFO 21796 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final java.lang.String com.example.helpdesk.config.JwtService.SECRET_KEY
+2024-05-07T18:04:59.256+03:00  INFO 21796 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-07T18:04:59.882+03:00  WARN 21796 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-07T18:05:00.118+03:00  INFO 21796 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-05-07T18:05:00.560+03:00  INFO 21796 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 6 endpoint(s) beneath base path '/actuator'
+2024-05-07T18:05:00.635+03:00  INFO 21796 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ce2f4d6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58070889, org.springframework.security.web.context.SecurityContextHolderFilter@6ca1c156, org.springframework.security.web.header.HeaderWriterFilter@5bbda8aa, org.springframework.security.web.authentication.logout.LogoutFilter@6fd6d887, com.example.helpdesk.config.JwtAuthenticationFilter@493489dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@228ed68c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2da16d31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c71329f, org.springframework.security.web.session.SessionManagementFilter@38f0de07, org.springframework.security.web.access.ExceptionTranslationFilter@9c7699e, org.springframework.security.web.access.intercept.AuthorizationFilter@632cfbc5]
+2024-05-07T18:05:01.272+03:00  INFO 21796 --- [           main] c.e.helpdesk.HelpdeskApplicationTests    : Started HelpdeskApplicationTests in 7.329 seconds (process running for 8.518)
+2024-05-07T18:05:01.342+03:00  INFO 21796 --- [onPool-worker-1] com.example.helpdesk.LoggingAspect       : Tried the register method for email: admin@mail.com
+2024-05-07T18:05:01.342+03:00  INFO 21796 --- [onPool-worker-1] com.example.helpdesk.LoggingAspect       : Uploaded the file: admin@mail.com at \<CATALINA_HOME>\webapps
+Hibernate: 
+    select
+        nextval('_user_seq')
+Hibernate: 
+    insert 
+    into
+        _user
+        (department_id,email,firstname,lastname,password,role,id) 
+    values
+        (?,?,?,?,?,?,?)
+Hibernate: 
+    select
+        nextval('token_seq')
+Hibernate: 
+    insert 
+    into
+        token
+        (expired,revoked,token,token_type,user_id,id) 
+    values
+        (?,?,?,?,?,?)
+Admin token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTcxNTA5NDMwMSwiZXhwIjoxNzE1MTgwNzAxfQ.8izsBCHyCCfFCvXFlTX1aBiP8W6b5Ha9PUAMvTtTUG4
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.department_id,
+        u1_0.email,
+        u1_0.firstname,
+        u1_0.lastname,
+        u1_0.password,
+        u1_0.role 
+    from
+        _user u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        d1_0.department_id,
+        d1_0.department_name,
+        u1_0.email,
+        u1_0.firstname,
+        u1_0.lastname,
+        u1_0.password,
+        u1_0.role,
+        a1_0.user_assignee_id,
+        a1_0.id_ticket,
+        a1_0.dtype,
+        a1_0.created_at,
+        a1_0.last_update,
+        a1_0.status,
+        a1_0.subject,
+        u2_0.id,
+        d2_0.department_id,
+        d2_0.department_name,
+        u2_0.email,
+        u2_0.firstname,
+        u2_0.lastname,
+        u2_0.password,
+        u2_0.role,
+        a1_0.threat_level 
+    from
+        _user u1_0 
+    left join
+        department d1_0 
+            on d1_0.department_id=u1_0.department_id 
+    left join
+        ticket a1_0 
+            on u1_0.id=a1_0.user_assignee_id 
+    left join
+        _user u2_0 
+            on u2_0.id=a1_0.user_id 
+    left join
+        department d2_0 
+            on d2_0.department_id=u2_0.department_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.user_id,
+        t1_0.id_ticket,
+        t1_0.dtype,
+        t1_0.created_at,
+        t1_0.last_update,
+        t1_0.status,
+        t1_0.subject,
+        u1_0.id,
+        d1_0.department_id,
+        d1_0.department_name,
+        u1_0.email,
+        u1_0.firstname,
+        u1_0.lastname,
+        u1_0.password,
+        u1_0.role,
+        t1_0.threat_level 
+    from
+        ticket t1_0 
+    left join
+        _user u1_0 
+            on u1_0.id=t1_0.user_assignee_id 
+    left join
+        department d1_0 
+            on d1_0.department_id=u1_0.department_id 
+    where
+        t1_0.user_id=?
+Hibernate: 
+    update
+        _user 
+    set
+        department_id=?,
+        email=?,
+        firstname=?,
+        lastname=?,
+        password=?,
+        role=? 
+    where
+        id=?
+2024-05-07T18:05:01.794+03:00  INFO 21796 --- [onPool-worker-1] com.example.helpdesk.LoggingAspect       : Tried the register method for email: manager@mail.com
+2024-05-07T18:05:01.794+03:00  INFO 21796 --- [onPool-worker-1] com.example.helpdesk.LoggingAspect       : Uploaded the file: manager@mail.com at \<CATALINA_HOME>\webapps
+Hibernate: 
+    select
+        nextval('_user_seq')
+Hibernate: 
+    insert 
+    into
+        _user
+        (department_id,email,firstname,lastname,password,role,id) 
+    values
+        (?,?,?,?,?,?,?)
+Hibernate: 
+    select
+        nextval('token_seq')
+Hibernate: 
+    insert 
+    into
+        token
+        (expired,revoked,token,token_type,user_id,id) 
+    values
+        (?,?,?,?,?,?)
+Manager token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQG1haWwuY29tIiwiaWF0IjoxNzE1MDk0MzAxLCJleHAiOjE3MTUxODA3MDF9.UhXkOiG_qE71mPp0HI-uY4gP66zE6-9k-LOBCeWHYlg
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.department_id,
+        u1_0.email,
+        u1_0.firstname,
+        u1_0.lastname,
+        u1_0.password,
+        u1_0.role 
+    from
+        _user u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        d1_0.department_id,
+        d1_0.department_name,
+        u1_0.email,
+        u1_0.firstname,
+        u1_0.lastname,
+        u1_0.password,
+        u1_0.role,
+        a1_0.user_assignee_id,
+        a1_0.id_ticket,
+        a1_0.dtype,
+        a1_0.created_at,
+        a1_0.last_update,
+        a1_0.status,
+        a1_0.subject,
+        u2_0.id,
+        d2_0.department_id,
+        d2_0.department_name,
+        u2_0.email,
+        u2_0.firstname,
+        u2_0.lastname,
+        u2_0.password,
+        u2_0.role,
+        a1_0.threat_level 
+    from
+        _user u1_0 
+    left join
+        department d1_0 
+            on d1_0.department_id=u1_0.department_id 
+    left join
+        ticket a1_0 
+            on u1_0.id=a1_0.user_assignee_id 
+    left join
+        _user u2_0 
+            on u2_0.id=a1_0.user_id 
+    left join
+        department d2_0 
+            on d2_0.department_id=u2_0.department_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.user_id,
+        t1_0.id_ticket,
+        t1_0.dtype,
+        t1_0.created_at,
+        t1_0.last_update,
+        t1_0.status,
+        t1_0.subject,
+        u1_0.id,
+        d1_0.department_id,
+        d1_0.department_name,
+        u1_0.email,
+        u1_0.firstname,
+        u1_0.lastname,
+        u1_0.password,
+        u1_0.role,
+        t1_0.threat_level 
+    from
+        ticket t1_0 
+    left join
+        _user u1_0 
+            on u1_0.id=t1_0.user_assignee_id 
+    left join
+        department d1_0 
+            on d1_0.department_id=u1_0.department_id 
+    where
+        t1_0.user_id=?
+Hibernate: 
+    update
+        _user 
+    set
+        department_id=?,
+        email=?,
+        firstname=?,
+        lastname=?,
+        password=?,
+        role=? 
+    where
+        id=?
+2024-05-07T18:05:01.904+03:00  INFO 21796 --- [onPool-worker-1] com.example.helpdesk.LoggingAspect       : Tried the register method for email: client@mail.com
+2024-05-07T18:05:01.904+03:00  INFO 21796 --- [onPool-worker-1] com.example.helpdesk.LoggingAspect       : Uploaded the file: client@mail.com at \<CATALINA_HOME>\webapps
+Hibernate: 
+    insert 
+    into
+        _user
+        (department_id,email,firstname,lastname,password,role,id) 
+    values
+        (?,?,?,?,?,?,?)
+Hibernate: 
+    insert 
+    into
+        token
+        (expired,revoked,token,token_type,user_id,id) 
+    values
+        (?,?,?,?,?,?)
+Client token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjbGllbnRAbWFpbC5jb20iLCJpYXQiOjE3MTUwOTQzMDEsImV4cCI6MTcxNTE4MDcwMX0.pqd9dZkO4EghZGaWQyTEabaWxUXC1uG20rvizEhOQys
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.department_id,
+        u1_0.email,
+        u1_0.firstname,
+        u1_0.lastname,
+        u1_0.password,
+        u1_0.role 
+    from
+        _user u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        d1_0.department_id,
+        d1_0.department_name,
+        u1_0.email,
+        u1_0.firstname,
+        u1_0.lastname,
+        u1_0.password,
+        u1_0.role,
+        a1_0.user_assignee_id,
+        a1_0.id_ticket,
+        a1_0.dtype,
+        a1_0.created_at,
+        a1_0.last_update,
+        a1_0.status,
+        a1_0.subject,
+        u2_0.id,
+        d2_0.department_id,
+        d2_0.department_name,
+        u2_0.email,
+        u2_0.firstname,
+        u2_0.lastname,
+        u2_0.password,
+        u2_0.role,
+        a1_0.threat_level 
+    from
+        _user u1_0 
+    left join
+        department d1_0 
+            on d1_0.department_id=u1_0.department_id 
+    left join
+        ticket a1_0 
+            on u1_0.id=a1_0.user_assignee_id 
+    left join
+        _user u2_0 
+            on u2_0.id=a1_0.user_id 
+    left join
+        department d2_0 
+            on d2_0.department_id=u2_0.department_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.user_id,
+        t1_0.id_ticket,
+        t1_0.dtype,
+        t1_0.created_at,
+        t1_0.last_update,
+        t1_0.status,
+        t1_0.subject,
+        u1_0.id,
+        d1_0.department_id,
+        d1_0.department_name,
+        u1_0.email,
+        u1_0.firstname,
+        u1_0.lastname,
+        u1_0.password,
+        u1_0.role,
+        t1_0.threat_level 
+    from
+        ticket t1_0 
+    left join
+        _user u1_0 
+            on u1_0.id=t1_0.user_assignee_id 
+    left join
+        department d1_0 
+            on d1_0.department_id=u1_0.department_id 
+    where
+        t1_0.user_id=?
+]]></system-out>
+  </testcase>
+</testsuite>

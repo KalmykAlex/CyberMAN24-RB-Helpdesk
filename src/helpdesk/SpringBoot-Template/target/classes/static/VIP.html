@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIP Zone</title>
+
+    <style>
+        body {
+            background-color: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            height: 100vh;
+        }
+        button {
+            background-color: #000;
+            border: .5px solid crimson;
+            border-radius: 10px;
+            color: #fff;
+            padding: 8px;
+            box-shadow: 0 0 30px 0 crimson,
+            0 0 30px 0 crimson,
+            0 0 10px 0 crimson inset;
+        }
+    </style>
+
+</head>
+<body>
+    <button id="vipButton">Get VIP </button>
+</body>
+
+    <script>
+        document.getElementById("vipButton").addEventListener("click", async function() {
+            const token = localStorage.getItem('token');
+
+            if (!token) {
+                alert("Missing token. Please login first."); // Afiseaza alerta daca token-ul lipseste
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/v1/client/getVIP', {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const data = await response.text(); // Așteaptă răspunsul text
+                console.log(data);
+                alert("VIP access granted! Here is your cupon: " + data);
+            } catch (error) {
+                console.error('There was a problem with the request:', error);
+                alert("There was a problem with the request: " + error.message);
+            }
+        });
+    </script>
+
+</html>
+
+<!--
+    This is for developers only
+    Task for Richardo the dev, uncomment this and print it as a message in page
+    and make sure that only VIPs can obtain the
+
+    You are being considered a VIP only if you have enough coins
+    How much is enough? A lot.
+    You can earn them only if you are one of our CLIENT USER and
+    used our fictional app last year.
+
+    What does being VIP provide you? Discount codes before anybody else.
+    Currently John Snow is the only provider of those discount codes.
+ -->

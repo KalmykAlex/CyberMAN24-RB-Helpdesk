@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        body {
+            margin: 0;
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: #0433aa;
+            color: white;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky + .content {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="navbar">
+    <a href="createTicket.html">Create ticket</a>
+</div>
+
+<div id="roleContainer">
+    ROLE: <span id="userRole"></span>
+</div>
+
+<div>Ticket</div>
+<div id="ticketFunctionality" style="display: block;">
+    <input type="number" id="ticketIdInput" placeholder="Enter a number">
+    <button id="submitButton">Submit</button>
+</div>
+
+
+<div>Comment</div>
+<div id="commentFunctionality2" style="display: block;">
+    <input type="number" id="commentIdInput" placeholder="Enter a number">
+    <button id="submitButton2">Submit</button>
+</div>
+
+<script>
+
+    function getUserRole() {
+
+        const token = localStorage.getItem('token');
+
+        if (token) {
+
+            fetch('/api/v1/client/myRole', {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    // Actualizează conținutul rolului
+                    document.getElementById('userRole').textContent = data;
+                    if (data === 'ADMIN') {
+                        localStorage.setItem('role', 'ADMIN');
+                    }
+
+                    if(data === 'MANAGER'){
+                        localStorage.setItem('role', 'MANAGER');
+                    }
+
+                    if(data === 'USER'){
+                        localStorage.setItem('role', 'USER');
+                    }
+                })
+                .catch(error => {
+                    console.error('There was a problem with the request:', error);
+                });
+        } else {
+            console.error('Token not found in localStorage');
+        }
+    }
+
+    document.getElementById("submitButton").addEventListener("click", async function(event) {
+        event.preventDefault();
+
+        var numberValue = document.getElementById("ticketIdInput").value;
+        var data = {
+            id: parseInt(numberValue)
+        };
+
+        const token = localStorage.getItem('token');
+        if (!token) {
+            alert("Missing JWT");
+            return;
+        }
+        endpoint = '/api/v1/admin/getTicket';
+
+        if(localStorage.getItem('role') === 'USER'){
+            endpoint = '/api/v1/client/getTicket'
+        }
+
+        try {
+            const response = await fetch(endpoint, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            const responseData = await response.json();
+            alert(JSON.stringify(responseData));
+        } catch (error) {
+            console.error('There was a problem with the request:', error);
+            alert("There was a problem with the request: " + error.message);
+        }
+    });
+
+
+    window.onload = function () {
+        getUserRole();
+    };
+
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+</body>
+</html>

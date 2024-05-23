@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        body {
+            margin: 0;
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: #0433aa;
+            color: white;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky + .content {
+            padding-top: 60px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        .single-block-form {
+            display: inline-block;
+            position: relative;
+            width: 400px;
+            border: solid 1px #0433aa;
+        }
+        .sbf__input {
+            width: 100%;
+        }
+        .sbf__button {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .-vis-hidden {
+            clip: rect(0px, 0px, 0px, 0px);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+        input[type="text"] {
+            display: inline-block;
+            line-height: normal;
+            padding: 14px 10px 10px;
+            vertical-align: middle;
+            border: 0 none;
+        }
+
+        .button {
+            background-color: #0433aa;
+            border: medium none;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: normal;
+            line-height: normal;
+            margin-bottom: 0;
+            padding: 14px 30px 10px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms ease 0s;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+
+<div id="navbar">
+    <a class="active" href="homepage.html">Home</a>
+</div>
+
+<h2>Tell us what bothers you</h2>
+<form class="site-search single-block-form" method="get" action="/search">
+    <input type="text" name="q" id="search-site" placeholder="Enter your issue" class="sbf__input">
+    <input type="submit" value="Let us know" class="sbf__button button" id="pressMeIdareYou">
+</form>
+
+<script>
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
+    document.getElementById("pressMeIdareYou").addEventListener("click", async function(event){
+        event.preventDefault();
+        var inputValue = document.getElementById("search-site").value;
+        console.log(inputValue);
+        var data = {
+            subject: inputValue
+        };
+
+        const token = localStorage.getItem('token');
+        console.log(token);
+        if (!token) {
+            alert("Missing JWT");
+            return;
+        }
+
+        const endpoint = '/api/v1/client/createTicket';
+
+        console.log(endpoint);
+        fetch(endpoint, {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                alert("Ticket with id: " + data + " has been created!");
+            })
+            .catch(error => {
+                console.error('There was a problem with the request:', error);
+            });
+    });
+</script>
+
+</body>
+</html>
+
